@@ -1,0 +1,40 @@
+@import "colors"
+
+.slider
+  overflow hidden
+  .slides
+    position relative
+    .slide
+      position relative
+      float left
+      &:last-child:after
+        content " "
+        display table
+        clear both
+
+.slide_prev, .slide_next
+  position absolute
+  width 40px
+  height 60px
+  cursor pointer
+  z-index 1000
+  &:hover
+    &:before
+      opacity 0.98
+  &:before
+    -webkit-transition all .5s ease
+    color gray002
+    opacity 0.8
+    font-family gentle_edges
+    text-align center
+    font-size 50px
+
+.slide_prev
+  left 10px
+  &:before
+    content: "\e000"
+
+.slide_next
+  right 10px
+  &:before
+    content: "\e001"
