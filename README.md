@@ -7,8 +7,10 @@ a simple non obstrusive jQuery slider plugin.
 <ol>
 	<li>add a link to the slider.css file or the minified version in your html page</li>
 	<li>add a link to the slider.js file or the minified version in your html page</li>
-	<li>construct your slider like this
-		<span>
+	<li>construct your slider like the html code below<li>
+	<li>initialize your slider based on the js code below</li>
+</ol>
+
 ```html
 	<div class='slider'>
 		<div class='slides'>
@@ -18,13 +20,9 @@ a simple non obstrusive jQuery slider plugin.
 		</div>
 	</div>
 ```
-		<span>
-	<li>
-	<li>initialize your slider
+
 ```js
 	$('.slider').slider();
 ```
-	</li>
-</ol>
 
 Please have a look at the demo folder which contains a working example.
