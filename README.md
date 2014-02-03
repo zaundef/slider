@@ -8,20 +8,22 @@ a simple non obstrusive jQuery slider plugin.
 	<li>add a link to the slider.css file or the minified version in your html page</li>
 	<li>add a link to the slider.js file or the minified version in your html page</li>
 	<li>construct your slider like this
-		```html
-			<div class='slider'>
-				<div class='slides'>
-					<div class='slide'>my slide 1</div>
-					<div class='slide'>my slide 2</div>
-					...
-				</div>
-			</div>
-		```
+		<span>
+```html
+	<div class='slider'>
+		<div class='slides'>
+			<div class='slide'>my slide 1</div>
+			<div class='slide'>my slide 2</div>
+			...
+		</div>
+	</div>
+```
+		<span>
 	<li>
 	<li>initialize your slider
-		```js
-			$('.slider').slider();
-		```
+```js
+	$('.slider').slider();
+```
 	</li>
 </ol>
 
