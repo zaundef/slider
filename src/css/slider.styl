@@ -1,0 +1,12 @@
+.slider
+  overflow hidden
+  .slides
+    position relative
+    .slide
+      position relative
+      width 100%
+      float left
+      &:last-child:after
+        content " "
+        display table
+        clear both

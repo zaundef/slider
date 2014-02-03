@@ -1,0 +1,40 @@
+body
+	width 100%
+	margin 0
+	padding 0
+#slider
+	position relative
+	height 500px
+	.slide_prev, .slide_next
+		position absolute
+		top 50%
+		width 60px
+		height 60px
+		cursor pointer
+		z-index 1000
+		border-radius 60px
+		border 1px solid black
+		&:hover
+			&:before
+				opacity 0.98
+		&:before
+			display block
+			-webkit-transition all .5s ease
+			color black
+			opacity 0.8
+			text-align center
+			font-size 1em
+			line-height 60px
+
+	.slide_prev
+		left 10px
+		&:before
+			content: "prev"
+
+	.slide_next
+		right 10px
+		&:before
+			content: "next"
+
+	.slides
+		transition left .5s ease

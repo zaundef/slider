@@ -1,0 +1,2 @@
+/*! typewritter 0.1.0 2014-02-03 */
+$(document).ready(function(){var a=$("#slider");a.slider(),$(document).on("click",".slider .slide_prev",function(){a.movePrev()}),$(document).on("click",".slider .slide_next",function(){a.moveNext()})});
